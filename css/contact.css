@@ -119,6 +119,30 @@
   box-shadow: var(--shadow-lg);
 }
 
+/* Updated Success Message for static contact message */
+.success-message {
+  background-color: var(--white);
+  border: 1px solid var(--accent-red);
+  color: var(--primary-color);
+  padding: var(--spacing-6);
+  border-radius: var(--border-radius-lg);
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-6);
+  text-align: center;
+  user-select: text; /* make sure text is selectable */
+}
+
+.success-message a {
+  color: var(--accent-red);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.success-message a:hover {
+  color: var(--primary-color);
+}
+
 .form-success {
   text-align: center;
   padding: var(--spacing-12) 0;
@@ -143,9 +167,14 @@
   margin-bottom: var(--spacing-2);
 }
 
-.success-message {
-  color: var(--accent-gray);
-  margin-bottom: var(--spacing-6);
+/* Hide any form inputs/select/textarea to prevent validation tooltips */
+.contact-form-container form,
+.contact-form-container input,
+.contact-form-container textarea,
+.contact-form-container select {
+  display: none !important;
+  pointer-events: none !important;
+  user-select: none !important;
 }
 
 .contact-form {
@@ -221,53 +250,6 @@
   animation: dots 1.5s steps(4, end) infinite;
 }
 
-/* Map Section */
-.map-section {
-  padding: var(--spacing-16) 0;
-  background-color: var(--primary-color);
-}
-
-.map-section .section-title {
-  color: var(--white);
-}
-
-.map-section .section-subtitle {
-  color: var(--accent-gray);
-}
-
-.map-container {
-  margin-top: var(--spacing-12);
-}
-
-.map-placeholder {
-  background-color: var(--accent-gray);
-  height: 24rem;
-  border-radius: var(--border-radius-lg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.map-icon {
-  width: 4rem;
-  height: 4rem;
-  color: var(--accent-red);
-  margin-bottom: var(--spacing-4);
-}
-
-.map-title {
-  font-size: var(--font-size-xl);
-  font-weight: 600;
-  color: var(--white);
-  margin-bottom: var(--spacing-2);
-}
-
-.map-address {
-  color: var(--accent-gray);
-  margin-bottom: 0;
-}
 
 /* Responsive Design */
 @media (min-width: 768px) {
@@ -301,17 +283,6 @@
   border-radius: var(--border-radius);
   margin-bottom: var(--spacing-4);
   font-size: var(--font-size-sm);
-}
-
-.success-message {
-  background-color: #f0fdf4;
-  border: 1px solid #bbf7d0;
-  color: #166534;
-  padding: var(--spacing-4);
-  border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-4);
-  text-align: center;
-  font-weight: 600;
 }
 
 /* Loading Animation */
