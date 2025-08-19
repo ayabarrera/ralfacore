@@ -1,0 +1,333 @@
+.contact-hero {
+  padding: 8rem 0 4rem;
+  background-color: var(--secondary-color);
+}
+
+.contact-title {
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  color: var(--accent-gray);
+  margin-bottom: var(--spacing-6);
+  line-height: 1.1;
+}
+
+.contact-subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--accent-gray);
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Contact Main */
+.contact-main {
+  padding: var(--spacing-16) 0;
+  background-color: var(--secondary-color);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-12);
+}
+
+/* Contact Info */
+.contact-info {
+  margin-bottom: var(--spacing-8);
+}
+
+.info-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-8);
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--spacing-6);
+  background-color: var(--white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  transition: box-shadow var(--transition-base);
+}
+
+.contact-method:hover {
+  box-shadow: var(--shadow-xl);
+}
+
+.method-icon {
+  background-color: var(--accent-red);
+  padding: var(--spacing-3);
+  border-radius: var(--border-radius-lg);
+  margin-right: var(--spacing-4);
+  flex-shrink: 0;
+}
+
+.method-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--white);
+}
+
+.method-content {
+  flex: 1;
+}
+
+.method-title {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-1);
+}
+
+.method-text {
+  color: var(--accent-gray);
+  margin-bottom: var(--spacing-1);
+}
+
+.method-text:last-child {
+  margin-bottom: 0;
+}
+
+.method-subtext {
+  font-size: var(--font-size-sm);
+  color: var(--accent-gray);
+  margin-bottom: 0;
+}
+
+.method-link {
+  color: var(--accent-gray);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.method-link:hover {
+  color: var(--accent-red);
+}
+
+/* Contact Form */
+.contact-form-container {
+  background-color: var(--white);
+  padding: var(--spacing-8);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.form-success {
+  text-align: center;
+  padding: var(--spacing-12) 0;
+}
+
+.success-icon {
+  width: 4rem;
+  height: 4rem;
+  color: var(--accent-red);
+  margin: 0 auto var(--spacing-4);
+}
+
+.success-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.success-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-2);
+}
+
+.success-message {
+  color: var(--accent-gray);
+  margin-bottom: var(--spacing-6);
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-6);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-6);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-2);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4);
+  border: 1px solid rgba(74, 74, 74, 0.2);
+  border-radius: var(--border-radius-lg);
+  font-size: var(--font-size-base);
+  transition: all var(--transition-base);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent-red);
+  box-shadow: 0 0 0 2px rgba(166, 44, 43, 0.1);
+}
+
+.form-textarea {
+  resize: none;
+  font-family: inherit;
+}
+
+.form-submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.form-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-submit:disabled:hover {
+  transform: none;
+}
+
+.btn-text {
+  margin-right: var(--spacing-2);
+}
+
+.form-submit.loading .btn-text::after {
+  content: "...";
+  animation: dots 1.5s steps(4, end) infinite;
+}
+
+/* Map Section */
+.map-section {
+  padding: var(--spacing-16) 0;
+  background-color: var(--primary-color);
+}
+
+.map-section .section-title {
+  color: var(--white);
+}
+
+.map-section .section-subtitle {
+  color: var(--accent-gray);
+}
+
+.map-container {
+  margin-top: var(--spacing-12);
+}
+
+.map-placeholder {
+  background-color: var(--accent-gray);
+  height: 24rem;
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.map-icon {
+  width: 4rem;
+  height: 4rem;
+  color: var(--accent-red);
+  margin-bottom: var(--spacing-4);
+}
+
+.map-title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: var(--spacing-2);
+}
+
+.map-address {
+  color: var(--accent-gray);
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .contact-title {
+    font-size: var(--font-size-6xl);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-12);
+  }
+
+  .contact-info {
+    margin-bottom: 0;
+  }
+}
+
+/* Form Validation Styles */
+.form-input.error,
+.form-select.error,
+.form-textarea.error {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.1);
+}
+
+.error-message {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: var(--spacing-4);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-4);
+  font-size: var(--font-size-sm);
+}
+
+.success-message {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  padding: var(--spacing-4);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-4);
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Loading Animation */
+@keyframes dots {
+  0%,
+  20% {
+    content: "";
+  }
+  40% {
+    content: ".";
+  }
+  60% {
+    content: "..";
+  }
+  80%,
+  100% {
+    content: "...";
+  }
+}

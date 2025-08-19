@@ -1,0 +1,17 @@
+@import './css/about.css';
+@import './css/animations.css';
+@import './css/base.css';
+@import './css/contact.css';
+@import './css/footer.css';
+@import './css/hero.css';
+@import './css/navigation.css';
+@import './css/projects-page.css';
+@import './css/projects.css';
+@import './css/services-page.css';
+@import './css/services.css';
+@import './css/testi.css';
+@import './css/testimonials.css';
+
+@import './projects/laspinas.css';
+@import './projects/projects.css';
+@import './projects/school.css';

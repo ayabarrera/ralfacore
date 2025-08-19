@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ralfacore General Construction</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/projects-page.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+<!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./public/logo.svg" alt="Ralfacore logo" width="150" height="60">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="back-link">
+                <a href="index.html" class="back-button">
+                    <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5" />
+                        <path d="m12 19-7-7 7-7" />
+                    </svg>
+                    Back to Home
+                </a>
+            </div>
+            <h1 class="projects-title">
+                Our <span class="text-accent">Completed Projects</span>
+            </h1>
+            <p class="projects-subtitle">
+                Explore our portfolio of successful construction projects. From residential homes to commercial
+                buildings,
+                each project showcases our commitment to quality and innovation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="renovation">Renovations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid-section">
+        <div class="container">
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <img src="./images/index/bungalow.png" alt="Modern Family Home">
+                        <div class="project-overlay">
+                            <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15,3 21,3 21,9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category residential">Residential</span>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    <span>2021 - 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Bungalow with Loft</h3>
+                        <div class="project-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Cainta, Rizal Philippines</span>
+                        </div>
+                        <p class="project-description">A modern loft-type bungalow built in Rizal, approximately 360 sq.
+                            m in area. Project highlights using high-ceiling design and an open-space concept to
+                            maximize lighting and ventilation.</p>
+
+                        <div class="project-details">
+                            <h4 class="details-title">Project Photos</h4>
+                            <div class="before-after">
+                                <img src="./images/projects/cainta-before.png" alt="Before" class="before-after-img">
+                                <img src="./images/projects/cainta-more.png" alt="After" class="before-after-img">
+                            </div>
+                        </div>
+
+                        <div class="project-testimonial">
+                            <h4 class="testimonial-title">Roles</h4>
+                            <ul class="ul-default">
+                                <li>Construction Management</li>
+                                <li>Civil, Electrical, Plumbing, and Finishing Works</li>
+                                <li>Architectural & Engineering Design</li>
+                                <li>Interior Design</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-scope">
+                            <h4 class="scope-title">Project Inclusions</h4>
+                            <ul class="ul-default">
+                                <li>Ground Floor</li>
+                                <li>Roof Works</li>
+                                <li>New Office, Laundry, Pantry, and Auxillary Kitchen</li>
+                                <li>Living Area, Main and Auxillary Kitchen</li>
+                                <li>Elevated Storage Room</li>
+                                <li>1-Car Garage</li>
+                            </ul>
+                        </div>
+
+                        <!-- See More Button -->
+                        <div class="project-footer">
+                            <a href="./projects/cainta.html" class="see-more-btn">
+                                See More
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="renovation">
+                    <div class="project-image">
+                        <img src="./images/index/laspinas.png" alt="Modern Family Home">
+                        <div class="project-overlay">
+                            <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15,3 21,3 21,9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category residential">Renovation</span>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    <span>2022 - 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Bungalow Expansion and Garage Roof Installation</h3>
+                        <div class="project-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Las Pinas, Metro Manila Philippines</span>
+                        </div>
+                        <p class="project-description"> A bungalow renovation and extension located in Las Piñas.
+                            Project highlights repainting and re-orienting interior layout to maximize the space and
+                            give the house an updated look</p>
+
+                        <div class="project-details">
+                            <h4 class="details-title">Project Photos</h4>
+                            <div class="before-after">
+                                <img src="./images/projects/lp-1.png" alt="Before" class="before-after-img">
+                                <img src="./images/projects/lp-2.png" alt="After" class="before-after-img">
+                            </div>
+                        </div>
+
+                        <div class="project-testimonial">
+                            <h4 class="testimonial-title">Roles</h4>
+
+                            <ul class="ul-default">
+                                <li>Construction Management</li>
+                                <li>Civil, Electrical, Plumbing, and Finishing Works</li>
+                                <li>Architectural & Engineering Design</li>
+                                <li>Interior Design</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-scope">
+                            <h4 class="scope-title">Project Inclusions</h4>
+                            <ul class="ul-default">
+                                <li>Ground Floor</li>
+                                <li>Structural & Roofing Works</li>
+                                <li>Space Reconfiguration</li>
+                                <li>Custom Details: Paint, Pantry Shelves, and Cabinetry</li>
+                                <li>Bathroom & Plumbing</li>
+                                <li>New Septic Tank</li>
+                                <li>Pest Control Treatment</li>
+                            </ul>
+                        </div>
+                        <!-- See More Button -->
+                        <div class="project-footer">
+                            <a href="./projects/laspinas.html" class="see-more-btn">
+                                See More
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <img src="./images/projects/school.png" alt="Downtown Office Complex">
+                        <div class="project-overlay">
+                            <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15,3 21,3 21,9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category commercial">Commercial</span>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-title">School Building Extension</h3>
+                        <div class="project-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Binan, Laguna Philippines</span>
+                        </div>
+                        <p class="project-description">A third floor institutional building extension located in Biñan.
+                            Project highlights floor extension, new comfort room and hallway model proposal, and design
+                            proposal for future expansion.</p>
+
+                        <div class="project-details">
+                            <h4 class="details-title">Project Photos</h4>
+                            <div class="before-after">
+                                <img src="./images/index/management.png" alt="Before" class="before-after-img">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                    alt="After" class="before-after-img">
+                            </div>
+                        </div>
+
+                        <div class="project-testimonial">
+                            <h4 class="testimonial-title">Roles</h4>
+                            <ul class="ul-default">
+                                <li>Construction Management</li>
+                                <li>Civil, Electrical, Plumbing, and Finishing Works</li>
+                                <li>Architectural & Engineering Design</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-scope">
+                            <h4 class="scope-title">Project Inclusion</h4>
+                            <ul class="ul-default">
+                                <li>Third Floor</li>
+                                <li>2 Classrooms (60sqm)</li>
+                                <li>2 Comfort Rooms</li>
+                                <li>Roofing & Framing Works</li>
+                                <li>Half-wall Perimeter with Grills</li>
+                            </ul>
+                        </div>
+                        <!-- See More Button -->
+                        <div class="project-footer">
+                            <a href="./projects/school.html" class="see-more-btn">
+                                See More
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PROJECT 4-->
+
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <img src="./images/projects/4floors.png" alt="Downtown Office Complex">
+                        <div class="project-overlay">
+                            <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15,3 21,3 21,9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category residential">Residential</span>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    <span>2020 - 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Studio-Type Apartment</h3>
+                        <div class="project-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Makati, Philippines</span>
+                        </div>
+                        <p class="project-description">A 4-storey residential building built in Makati, consisting of
+                            three rentable floors for residential use, garage with common cr, and a roof deck serving as
+                            common area for residents.</p>
+
+                        <div class="project-details">
+                            <h4 class="details-title">Project Photos</h4>
+                            <div class="before-after">
+                                <img src="./images/projects/makati1.png" alt="Before" class="before-after-img">
+                                <img src="./images/projects/makati2.png" alt="After" class="before-after-img">
+                            </div>
+                        </div>
+
+                        <div class="project-testimonial">
+                            <h4 class="testimonial-title">Roles</h4>
+                            <ul class="ul-default">
+                                <li>Construction Management</li>
+                                <li>Coordination of all Subcontractors</li>
+                                <li>Architectural & Engineering Design</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-scope">
+                            <h4 class="scope-title">Project Inclusion</h4>
+                            <ul class="ul-default">
+                                <li>4-STOREY RESIDENTIAL BUILDING</li>
+                                <li>1st Floor: 1-Car Garage, 1-Common CR</li>
+                                <li>2nd to 4th Floor: 1 CR, 1 Kitchen, 1 Bedroom</li>
+                                <li>Building Facilities: EZ-DAB Water Pump, Automated Sprinkler System, Overhead Water
+                                    Tank, Pressure Water Tank</li>
+                            </ul>
+                        </div>
+                        <!-- See More Button -->
+                        <!-- <div class="project-footer">
+                            <a href="./projects/cainta.html" class="see-more-btn">
+                                See More
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!--PROJECT 5-->
+                <div class="project-card" data-category="renovation">
+                    <div class="project-image">
+                        <img src="./images/projects/bg3.png" alt="Downtown Office Complex">
+                        <div class="project-overlay">
+                            <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15,3 21,3 21,9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category renovation">Renovation</span>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    <span>2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Bungalow Renovation</h3>
+                        <div class="project-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Las Pinas, Philippines</span>
+                        </div>
+                        <p class="project-description"> A bungalow renovation located in Las Piñas. Project highlights
+                            repainting and re-orienting interior layout to maximize the space, and re-designing their
+                            cabinetry in order to accommodate the needs of the users. </p>
+
+                        <div class="project-details">
+                            <h4 class="details-title">Project Photos</h4>
+                            <div class="before-after">
+                                <img src="./images/projects/bg2.png" alt="Before" class="before-after-img">
+                                <img src="./images/projects/bg2.png" alt="After" class="before-after-img">
+                            </div>
+                        </div>
+
+                        <div class="project-testimonial">
+                            <h4 class="testimonial-title">Roles</h4>
+                            <ul class="ul-default">
+                                <li>Construction Management</li>
+                                <li>Civil, Electrical, Plumbing, and Finishing Works</li>
+                                <li>Interior Design - Cabinetry details and Furniture layout</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-scope">
+                            <h4 class="scope-title">Project Inclusion</h4>
+                            <ul class="ul-default">
+                                <li>Ground Floor</li>
+                                <li>Roof re-orientation</li>
+                                <li>Installation of Roofing</li>
+                                <li>Installation of Ceiling Shadow Line</li>
+                                <li>New Electrical Lighting Layout</li>
+                                <li>Restoration of Parque Tiles</li>
+                                <li>Wall Painting</li>
+                                <li>Installation of Pantry Shelves & Cabinetry Restoration</li>
+                                <li>Bathroom: re-tile, new water line</li>
+                                <li>Pest Control Treatment</li>
+                            </ul>
+                        </div>
+                        <!-- See More Button -->
+                        <!-- <div class="project-footer">
+                            <a href="./projects/cainta.html" class="see-more-btn">
+                                See More
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!--PROJECT 6-->
+
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <img src="./images/projects/proposal1.png" alt="Downtown Office Complex">
+                        <div class="project-overlay">
+                            <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15,3 21,3 21,9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category residential">Residential</span>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Two-Storey Residential Building</h3>
+                        <div class="project-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Negros, Philippines</span>
+                        </div>
+                        <p class="project-description">A two-storey residential building to be situated in Negros, our
+                            project emphasizes a design layout that maximizes the available space while addressing the
+                            client’s needs and adhering to their preferred overall architectural style.</p>
+
+                        <div class="project-details">
+                            <h4 class="details-title">Project Photos</h4>
+                            <div class="before-after">
+                                <img src="./images/projects/proposal2.png" alt="Before" class="before-after-img">
+                                <img src="./images/projects/proposal3.png" alt="After" class="before-after-img">
+                            </div>
+                        </div>
+
+                        <div class="project-testimonial">
+                            <h4 class="testimonial-title">Roles</h4>
+                            <ul class="ul-default">
+                                <li>Conceptualization and Design Proposal</li>
+                                <li>Architectural and Engineering Design</li>
+                                <li>Interior Design</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-scope">
+                            <h4 class="scope-title">Project Inclusion</h4>
+                            <ul class="ul-default">
+                                <li>Open-Space Concept</li>
+                                <li>Space-saving Storage Solutions</li>
+                            </ul>
+                        </div>
+                        <!-- See More Button -->
+                        <!-- <div class="project-footer">
+                            <a href="./projects/cainta.html" class="see-more-btn">
+                                See More
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <img src="./images/index/fitout.png" alt="Downtown Office Complex">
+                        <div class="project-overlay">
+                            <svg class="overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15,3 21,3 21,9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category commercial">Commercial</span>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    <span>Aug - Nov 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Office Fit-out</h3>
+                        <div class="project-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Las Pinas, Metro Manila Philippines</span>
+                        </div>
+                        <p class="project-description">           An office space located in Las Piñas. Project highlights remodeling of interior layout and design, updating the look of the office and adding additional spaces needed by the end users.</p>
+
+                        <div class="project-details">
+                            <h4 class="details-title">Project Photos</h4>
+                            <div class="before-after">
+                                <img src="./images/index/fitout.png" alt="Before" class="before-after-img">
+                                <img src="./images/projects/office2.png"
+                                    alt="After" class="before-after-img">
+                            </div>
+                        </div>
+
+                        <div class="project-testimonial">
+                            <h4 class="testimonial-title">Roles</h4>
+                            <ul class="ul-default">
+                                <li>Construction Management</li>
+                                <li>Supervision & Coordination of Construction</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-scope">
+                            <h4 class="scope-title">Project Inclusion</h4>
+                            <ul class="ul-default">
+                                <li>Ground Floor with Loft</li>
+                                <li>Installation of Aluminum Glass Doors</li>
+                                <li>Dismantling of Window Grills</li>
+                                <li>Design and Construction of Stairs</li>
+                                <li>Installation of Ceiling & Insulation</li>
+                                <li>Installation of Roof Vent</li>
+                                <li>CR Renovation (Tiles & Bathroom Fixtures)</li>
+                                <li>Painting Works</li>
+                            </ul>
+                        </div>
+                        <!-- See More Button -->
+                        <!-- <div class="project-footer">
+                            <a href="./projects/cainta.html" class="see-more-btn">
+                                See More
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Let's Build Something Together.</h2>
+                <p class="cta-description">
+                    Ralfacore. At the Core of Every Build.
+                </p>
+                <a href="contact.html" class="btn btn-primary">
+                    Contact Us
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="nav-logo">
+                            <img src="./public/header-icon.png" alt="Ralfacore logo" width="250" height="150">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li>Residential Construction</li>
+                        <li>Commercial Projects</li>
+                        <li>Renovations</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="footer-contact">
+                        <p>Phone: +63 916 660 1184</p>
+                        <p>Email: rgalfaro.rgc@gmail.com</p>
+                        <p>Facebook: facebook.com/ralfacore</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ralfacore General Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+
+</html>

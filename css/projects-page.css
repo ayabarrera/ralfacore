@@ -1,0 +1,339 @@
+.projects-hero {
+  padding: 8rem 0 4rem;
+  background-color: var(--secondary-color);
+}
+
+.projects-title {
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-6);
+  line-height: 1.1;
+}
+
+.projects-subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--accent-gray);
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Filter Section */
+.projects-filter {
+  padding: var(--spacing-8) 0;
+  background-color: var(--secondary-color);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-4);
+}
+
+.filter-btn {
+  padding: var(--spacing-3) var(--spacing-6);
+  border-radius: var(--border-radius-lg);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--accent-red);
+  transform: scale(1.05);
+}
+
+/* Projects Grid */
+.projects-grid-section {
+  padding: var(--spacing-16) 0;
+  background-color: var(--secondary-color);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-8);
+  align-items: stretch;
+}
+
+.project-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-base);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow-xl);
+  transform: scale(1.05);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(26, 26, 26, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-base);
+}
+
+.project-card:hover .project-overlay {
+  background-color: rgba(26, 26, 26, 0.2);
+}
+
+.overlay-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--white);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.project-card:hover .overlay-icon {
+  opacity: 1;
+}
+
+.project-content {
+  padding: var(--spacing-6);
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-2);
+}
+
+.project-category {
+  padding: var(--spacing-1) var(--spacing-3);
+  border-radius: 9999px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.project-category.residential {
+  background-color: rgba(166, 44, 43, 0.1);
+  color: var(--accent-red);
+}
+
+.project-category.commercial {
+  background-color: rgba(74, 74, 74, 0.1);
+  color: var(--accent-gray);
+}
+
+.project-category.renovation {
+  background-color: rgba(166, 44, 43, 0.1);
+  color: var(--accent-red);
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  color: var(--accent-gray);
+  font-size: var(--font-size-sm);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+}
+
+.meta-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: var(--spacing-1);
+}
+
+.project-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-2);
+}
+
+.project-location {
+  display: flex;
+  align-items: center;
+  color: var(--accent-gray);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-3);
+}
+
+.location-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: var(--spacing-1);
+}
+
+/* Line-clamp for consistent height */
+.project-description {
+  color: var(--accent-gray);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-4);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-details {
+  margin-bottom: var(--spacing-4);
+}
+
+.details-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-2);
+}
+
+.before-after {
+  display: flex;
+  gap: var(--spacing-2);
+  justify-content: space-between;
+}
+
+.before-after-img {
+  width: 48%;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.project-testimonial {
+  margin-bottom: var(--spacing-4);
+}
+
+.testimonial-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-2);
+}
+
+.project-scope {
+  margin-bottom: 0;
+}
+
+.scope-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-2);
+}
+
+/* Projects CTA */
+.projects-cta {
+  padding: var(--spacing-16) 0;
+  background-color: var(--primary-color);
+}
+
+.projects-cta .cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projects-cta .cta-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: var(--spacing-6);
+}
+
+.projects-cta .cta-description {
+  font-size: var(--font-size-xl);
+  color: var(--accent-gray);
+  margin-bottom: var(--spacing-8);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .projects-title {
+    font-size: var(--font-size-6xl);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Filter Animation */
+.project-card {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.project-card.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+/* See More Button aligned to bottom right */
+.project-footer {
+  margin-top: auto;
+  text-align: right;
+}
+
+.see-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.see-more-btn:hover {
+  color: var(--accent-red);
+  transform: translateX(4px);
+}
+
+.see-more-btn .btn-icon {
+  width: 1rem;
+  height: 1rem;
+}
